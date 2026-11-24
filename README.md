@@ -1,11 +1,26 @@
-<div align="center">
+# Riya Mahato — One-Page Engineering Portfolio
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Personal portfolio website for **Riya Mahato**, Technical Sales Engineer & Applied AI Systems Builder. Built with React, TypeScript, Tailwind CSS v4, and Motion (`motion/react`).
 
-  <h1>Built with AI Studio</h2>
+## Structure & Editable Data Modules
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- `src/pages/OnePagePortfolio.tsx` & `src/components/OnePageLayout.tsx` — Continuous scrolling 7-section one-page portfolio with sticky `WORK / EXPERIENCE / EXPERTISE / ABOUT / CONTACT` navigation and active-section tracking.
+- `src/components/ProjectDrawer.tsx` — Slide-over technical drawer for inspecting system architecture diagrams, planned test harnesses, engineering trade-offs, and NDA scope notes.
+- `src/data/portfolio.ts` — Core project specifications, NDA toggle (`showConfidentialOemProject`), experience records, and confirmation flags.
+- `src/data/results.ts` — Separate, easily editable store for verified project outcomes and benchmarks once formally measured.
+- `src/data/toolkit.ts` — Five-category engineering toolkit and active learning boundary notes.
+- `src/data/photography.ts` — Dedicated photography manifest mapping real assets in `public/assets/aistudio/` with `aspectRatioClass`, `objectPosition`, category, caption, and `publicationApproved`.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Local Development
 
-</div>
+```bash
+npm install
+npm run dev
+```
+
+## Type Checking & Production Build
+
+```bash
+npm run lint
+npm run build
+```
